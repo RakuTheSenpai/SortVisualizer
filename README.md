@@ -9,13 +9,15 @@ The application presents colored bars that represent numbers 1 to N. To use the 
 |Hotkey|Description|
 |------|-----------|
 |Q|Performs Bubble Sort|
+|W|Performs Merge Sort|
 |R|Shuffles the array|
 
 # Examples
 ## Q
+## W
 ## R
 
 # Todo
 * Add quick sort
-* Add merge sort
 * Increase and decrease the number of bars with hotkeys.
+* Add examples
