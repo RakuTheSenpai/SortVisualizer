@@ -14,7 +14,7 @@ The application presents colored bars that represent numbers 1 to N. To use the 
 
 # Examples
 ## Q
-![Q](https://github.com/RakuTheSenpai/SortVisualizer/blob/main/Examples/r.gif)
+![Q](https://github.com/RakuTheSenpai/SortVisualizer/blob/main/Examples/q.gif)
 
 ## W
 ![W](https://github.com/RakuTheSenpai/SortVisualizer/blob/main/Examples/w.gif)
