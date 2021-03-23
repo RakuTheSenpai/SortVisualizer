@@ -3,7 +3,7 @@
 #include "SortWindow/SortWindow.h"
 int main(){
     sf::RenderWindow window(sf::VideoMode(1200,800),"Sort Visualizer");
-    std::vector<unsigned>numbers(150);
+    std::vector<unsigned>numbers(1200);
     SortWindow sortwindow(numbers, window);
     while(window.isOpen()){
         sf::Event event;
@@ -18,6 +18,9 @@ int main(){
                     {
                         case sf::Keyboard::Q:
                             sortwindow.bubble_sort();
+                            break;
+                        case sf::Keyboard::W:
+                            sortwindow.merge_sort();
                             break;
                         case sf::Keyboard::R:
                             sortwindow.shuffle();

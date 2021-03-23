@@ -7,9 +7,7 @@ struct SortingBar{
         unsigned value;
         sf::Vector2f size;
         SortingBar(unsigned v):value{v}{
-            bar.setOutlineColor(sf::Color::Black);
             bar.setFillColor(sf::Color::Cyan);
-            bar.setOutlineThickness(1);
         }
         SortingBar(){}
         friend void swap(SortingBar &a, SortingBar &b){
