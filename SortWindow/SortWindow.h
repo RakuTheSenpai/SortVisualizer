@@ -1,7 +1,9 @@
 #ifndef SORT_WINDOW_H
 #define SORT_WINDOW_H
 #include <SFML/Graphics.hpp>
-#include <iostream>
+#include <vector>
+#include <numeric>
+#include <algorithm>
 #include "../SortingBar/SortingBar.h"
 class SortWindow{
     private:
@@ -13,18 +15,22 @@ class SortWindow{
         sf::RenderWindow *window;
     public:
         SortWindow(std::vector<unsigned>&values, sf::RenderWindow &win){
-            //Be 80% the size of the current window
+            //Populate vector from 1 to N
+            std::iota(values.begin(), values.end(), 1);
+            //Shuffle
+            std::random_shuffle(values.begin(), values.end());
             window = &win;
-            width = window->getSize().x * .8;
-            height = window->getSize().y * .8;
-            int mx_ele = *std::max_element(values.begin(), values.end());
-            y_spacing = height/mx_ele;
-            x_spacing = width/values.size();
+            width = window->getSize().x;
+            height = window->getSize().y;
+            y_spacing = *std::max_element(values.begin(), values.end());
+            x_spacing = width/(values.size() + 1);
             for(auto i:values){
                 SortingBar bar{i};
                 bars.push_back(bar);
             }
         }
         void draw();
+        void bubble_sort();
+        void shuffle();
 };
 #endif
