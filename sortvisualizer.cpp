@@ -22,6 +22,9 @@ int main(){
                         case sf::Keyboard::W:
                             sortwindow.merge_sort();
                             break;
+                        case sf::Keyboard::E:
+                            sortwindow.quick_sort();
+                            break;
                         case sf::Keyboard::R:
                             sortwindow.shuffle();
                             break;

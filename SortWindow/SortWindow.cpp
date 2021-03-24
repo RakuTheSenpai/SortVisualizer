@@ -85,3 +85,29 @@ void SortWindow::merge(int left, int mid, int right){
     }
 
 }
+
+int SortWindow::partition(int low, int high){
+    int pivot = bars[high].value;
+    int i = (low - 1);
+    for(int j = low; j <= high - 1; j++){
+        if(bars[j].value < pivot){
+            ++i;
+            swap(bars[i], bars[j]);
+            draw();
+        }
+    }
+    swap(bars[i + 1], bars[high]);
+    draw();
+    return (i + 1);
+}
+
+void SortWindow::quick_sort_recursive(int low, int high){
+    if(low >= high) return;
+    int part = partition(low, high);
+    quick_sort_recursive(low, part - 1);
+    quick_sort_recursive(part + 1, high);
+}
+
+void SortWindow::quick_sort(){
+    quick_sort_recursive(0, bars.size() - 1);
+}
