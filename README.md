@@ -20,6 +20,9 @@ The application presents colored bars that represent numbers 1 to N. To use the 
 ## W
 ![W](https://github.com/RakuTheSenpai/SortVisualizer/blob/main/Examples/w.gif)
 
+## E
+![E](https://github.com/RakuTheSenpai/SortVisualizer/blob/main/Examples/e.gif)
+
 ## R
 ![R](https://github.com/RakuTheSenpai/SortVisualizer/blob/main/Examples/r.gif)
 
