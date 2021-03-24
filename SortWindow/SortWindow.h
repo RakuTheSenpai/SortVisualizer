@@ -16,6 +16,8 @@ class SortWindow{
         sf::RenderWindow *window;
         void merge_recursive(int, int);
         void merge(int, int, int);
+        int partition(int, int);
+        void quick_sort_recursive(int, int);
     public:
         SortWindow(std::vector<unsigned>&values, sf::RenderWindow &win){
             //Populate vector from 1 to N
@@ -35,6 +37,7 @@ class SortWindow{
         void draw();
         void bubble_sort();
         void merge_sort();
+        void quick_sort();
         void shuffle();
 };
 #endif
