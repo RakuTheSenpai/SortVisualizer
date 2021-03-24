@@ -10,6 +10,7 @@ The application presents colored bars that represent numbers 1 to N. To use the 
 |------|-----------|
 |Q|Performs Bubble Sort|
 |W|Performs Merge Sort|
+|E|Performs Quick Sort|
 |R|Shuffles the array|
 
 # Examples
@@ -23,5 +24,4 @@ The application presents colored bars that represent numbers 1 to N. To use the 
 ![R](https://github.com/RakuTheSenpai/SortVisualizer/blob/main/Examples/r.gif)
 
 # Todo
-* Add quick sort
 * Increase and decrease the number of bars with hotkeys.
