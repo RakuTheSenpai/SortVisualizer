@@ -25,6 +25,3 @@ The application presents colored bars that represent numbers 1 to N. To use the 
 
 ## R
 ![R](https://github.com/RakuTheSenpai/SortVisualizer/blob/main/Examples/r.gif)
-
-# Todo
-* Increase and decrease the number of bars with hotkeys.
